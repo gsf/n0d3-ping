@@ -1,6 +1,6 @@
 {
   "name": "n0d3-ping",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Ping plugin for n0d3",
   "homepage": "https://github.com/gsf/n0d3-ping",
   "author" : "Gabriel Farrell <g@grrawr.com>",
