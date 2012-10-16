@@ -1,7 +1,7 @@
 module.exports = function ping (room, log) {
-  room.listen(function (message) {
-    if (message.body == 'ping') {
-      room.speak('pong');
+  room.on('command', function (message) {
+    if (message.indexOf('ping') != -1) {
+      room.say('pong');
       log('Ponged a ping');
     }
   });
