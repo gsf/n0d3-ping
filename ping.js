@@ -1,7 +1,7 @@
-module.exports = function ping (client, n0d3) {
+module.exports = function ping (client) {
   client.on('.ping', function (command) {
     command.reply('pong');
-    n0d3.log('Ponged a ping');
+    console.log('Ponged a ping from ' + command.sender);
   });
   client.on('?ping', function () {
     client.say('ping - ping the bot and get a pong - https://github.com/gsf/n0d3-ping');
